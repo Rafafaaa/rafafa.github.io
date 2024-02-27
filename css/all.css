@@ -1,0 +1,53 @@
+@import url('../assets/fonts/Inter/font-face.css');
+@import url('../assets/fonts/Poppins/font-face.css');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: lightcoral;
+}
+
+nav {
+    width: 100%;
+    padding: 0.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    transition: background-color 0.5s;
+
+    border: 1rem 1rem;
+    border-style: solid;
+}
+
+body::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+body::-webkit-scrollbar-thumb {
+    border: 0;
+    border-style: solid;
+    border-color: transparent;
+    border-radius: 999px;
+    background-clip: padding-box;
+    background-color: #000;
+}
+
+nav.scrolled {
+    background-color: blue;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
